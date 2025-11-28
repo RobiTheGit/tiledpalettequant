@@ -210,8 +210,8 @@ quantizeButton.addEventListener("click", () => {
         }
         else if (data.action === Action.UpdatePalettes) {
             const palettes = data.palettes;
-            const paletteDisplayHeight = 16;
-            const paletteDisplayWidth = Math.min(16, Math.ceil(512 / data.numColors));
+            const paletteDisplayHeight = 8;
+            const paletteDisplayWidth = Math.min(8, Math.ceil(512 / data.numColors));
             palettesImage.width = data.numColors * paletteDisplayWidth;
             palettesImage.height = data.numPalettes * paletteDisplayHeight;
             const palCtx = palettesImage.getContext("2d");
